@@ -10,5 +10,29 @@ class Home{
             .should('eq', 'https://www.saucedemo.com/inventory.html')
     }
 
+    adicionarProduto(){
+        cy.get(elem.btn_onesieAddCard)
+        .click();
+    }
+
+    adicionarVariosProdutos(){
+        cy.get(elem.btn_onesieAddCard)
+        .click();
+
+        cy.get(elem.btn_boltAddCard)
+        .click();
+
+        cy.get(elem.btn_backPackAddCard)
+        .click();
+    }
+
+    checkout(){
+        cy.get(elem.div_shoppingCart)
+        .click();
+
+        cy.get(elem.btn_checkout)
+        .click();
+    }
+
 
 }export default new Home();
