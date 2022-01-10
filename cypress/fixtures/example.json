@@ -1,0 +1,6 @@
+{
+  "emailValido": "standard_user",
+  "passwordValida":"secret_sauce",
+  "emailInvalido": "abc123",
+  "passwordInvalida" : "12345"
+}
