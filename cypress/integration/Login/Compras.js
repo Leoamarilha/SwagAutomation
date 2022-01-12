@@ -13,7 +13,7 @@ describe('Adicionar um ou mais produto no carrinho', () => {
             this.data = data;
             login.logarEmaileSenha(this.data.emailValido, this.data.passwordValida)
             home.validaAcessoValido()
-        })
+        });
 
     });
 
