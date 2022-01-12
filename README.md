@@ -18,7 +18,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Linux Ubuntu 12.04 e superior, Fedora 21 e Debian 8 (somente 64 bits)
 * Windows 7 e superior (somente 64 bits)
 
-## 🚀 Instação
+## 🚀 Instalação
 Para instalar, siga estas etapas:
 
 ### Node.js
