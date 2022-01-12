@@ -1,34 +1,34 @@
 const elem = require('./elements').ELEMENTS;
 
-class Login{
+class Login {
 
-    logarEmaileSenha(email,senha){
+    logarEmaileSenha(email, senha) {
         cy.get(elem.inp_user)
             .clear()
             .type(email)
-        
+
         cy.get(elem.inp_senha)
             .clear()
             .type(senha)
-        
+
         cy.get(elem.btn_login)
             .click()
     }
 
-    logarSemEmailEsenha(){
+    logarSemEmailEsenha() {
         cy.get(elem.btn_login)
-        .click()
+            .click()
     }
 
-    validaAcessoInvalido(){
+    validaAcessoInvalido() {
         cy.get(elem.h3_erroLogin)
-        .should('contain.text' , 'Epic sadface: Username and password do not match any user in this service')
+            .should('contain.text', 'Epic sadface: Username and password do not match any user in this service')
     }
 
-    validaAcessoInvalidoSemEmailESenha(){
+    validaAcessoInvalidoSemEmailESenha() {
         cy.get(elem.h3_erroLogin)
-        .should('contain.text' , 'Epic sadface: Username is required')
+            .should('contain.text', 'Epic sadface: Username is required')
     }
 
 
-}export default new Login();
+} export default new Login();

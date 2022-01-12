@@ -1,38 +1,52 @@
 const elem = require('./elements').ELEMENTS;
 
-class Home{
+class Home {
 
-    validaAcessoValido(){
-            cy.get(elem.div_shoppingCart)
+    validaAcessoValido() {
+        cy.get(elem.div_shoppingCart)
             .should('be.visible');
-    
-            cy.url()
+
+        cy.url()
             .should('eq', 'https://www.saucedemo.com/inventory.html')
     }
 
-    adicionarProduto(){
+    adicionarProduto() {
         cy.get(elem.btn_onesieAddCard)
-        .click();
+            .click();
     }
 
-    adicionarVariosProdutos(){
+    adicionarVariosProdutos() {
         cy.get(elem.btn_onesieAddCard)
-        .click();
+            .click();
 
         cy.get(elem.btn_boltAddCard)
-        .click();
+            .click();
 
         cy.get(elem.btn_backPackAddCard)
-        .click();
+            .click();
     }
 
-    checkout(){
+    checkout() {
         cy.get(elem.div_shoppingCart)
-        .click();
+            .click();
 
         cy.get(elem.btn_checkout)
-        .click();
+            .click();
     }
 
+    acessarTwitter() {
+        cy.get(elem.li_twitter)
+            .click();
+    }
 
-}export default new Home();
+    acessarFacebook() {
+        cy.get(elem.li_facebook)
+            .click();
+    }
+
+    acessarLinkedin() {
+        cy.get(elem.li_linkedin)
+            .click();
+    }
+
+} export default new Home();

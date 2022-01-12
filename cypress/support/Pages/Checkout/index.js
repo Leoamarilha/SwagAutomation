@@ -1,48 +1,48 @@
 const elem = require('./elements').ELEMENTS;
 
-class Checkout{
+class Checkout {
 
-    checkoutInfo(firstName, lastName, zipCode){
+    checkoutInfo(firstName, lastName, zipCode) {
         cy.get(elem.inp_firstName)
-        .clear()
-        .type(firstName);
+            .clear()
+            .type(firstName);
 
         cy.get(elem.inp_lastName)
-        .clear()
-        .type(lastName);
+            .clear()
+            .type(lastName);
 
         cy.get(elem.inp_zipCode)
-        .clear()
-        .type(zipCode);
+            .clear()
+            .type(zipCode);
 
         cy.get(elem.btn_continue)
-        .click();
+            .click();
     }
 
-    finalizarCompra(){
+    finalizarCompra() {
         cy.get(elem.btn_finish)
-        .click();
+            .click();
 
         cy.url()
-        .should('eq', 'https://www.saucedemo.com/checkout-complete.html')
+            .should('eq', 'https://www.saucedemo.com/checkout-complete.html')
     }
 
-    validaProduto(){
+    validaProduto() {
         cy.get(elem.div_produtoNome)
-        .should('contain.text', 'Sauce Labs Onesie');
+            .should('contain.text', 'Sauce Labs Onesie');
     }
 
-    validaVariosProdutos(){
+    validaVariosProdutos() {
         cy.get(elem.div_produtoNome)
-        .should('contain.text', 'Sauce Labs Onesie');
+            .should('contain.text', 'Sauce Labs Onesie');
 
         cy.get(elem.div_produtoNome)
-        .should('contain.text', 'Sauce Labs Bolt T-Shirt')
+            .should('contain.text', 'Sauce Labs Bolt T-Shirt')
 
         cy.get(elem.div_produtoNome)
-        .should('contain.text', 'Sauce Labs Backpack')
+            .should('contain.text', 'Sauce Labs Backpack')
     }
-    
 
 
-}export default new Checkout();
+
+} export default new Checkout();
