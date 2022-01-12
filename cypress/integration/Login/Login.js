@@ -8,7 +8,7 @@ describe('Logar na aplicação', () => {
     beforeEach(() => {
         cy.visit('https://www.saucedemo.com/');
 
-        cy.fixture('example').then(function (data) {
+        cy.fixture('Massa').then(function (data) {
             this.data = data;
         })
     });
