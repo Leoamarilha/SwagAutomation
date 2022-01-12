@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-import login from '../../support/Pages/Login'
-import home from '../../support/Pages/Home'
+import login from '../support/Pages/Login'
+import home from '../support/Pages/Home'
 
 describe('Logar na aplicação', () => {
 

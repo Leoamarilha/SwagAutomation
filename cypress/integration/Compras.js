@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 
-import login from '../../support/Pages/Login'
-import home from '../../support/Pages/Home'
-import checkout from '../../support/Pages/Checkout'
+import login from '../support/Pages/Login'
+import home from '../support/Pages/Home'
+import checkout from '../support/Pages/Checkout'
 
 describe('Adicionar um ou mais produto no carrinho', () => {
 
