@@ -30,5 +30,10 @@ class Login {
             .should('contain.text', 'Epic sadface: Username is required')
     }
 
+    validaAcessoBloqueado() {
+        cy.get(elem.h3_erroLogin)
+            .should('contain.text', 'Epic sadface: Sorry, this user has been locked out')
+    }
+
 
 } export default new Login();

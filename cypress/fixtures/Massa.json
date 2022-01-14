@@ -1,9 +1,11 @@
 {
   "emailValido": "standard_user",
-  "passwordValida":"secret_sauce",
+  "emailBloqueado": "locked_out_user",
+  "senhaUsuarioBloqueado": "secret_sauce",
+  "passwordValida": "secret_sauce",
   "emailInvalido": "abc123",
-  "passwordInvalida" : "12345",
-  "firstName" : "Leandro",
-  "lastName" : "Amarilha",
-  "zipCode" : "28666970"
+  "passwordInvalida": "12345",
+  "firstName": "Leandro",
+  "lastName": "Amarilha",
+  "zipCode": "28666970"
 }
