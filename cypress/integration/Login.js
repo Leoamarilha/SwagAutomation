@@ -38,6 +38,4 @@ describe('Logar na aplicação', () => {
         login.validaAcessoBloqueado()
     });
 
-
-
 });
