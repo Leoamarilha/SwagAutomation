@@ -1,18 +1,16 @@
-name: Chrome headless
+name: Cypress Testes
 
-on: push
+on: [push]
 
 jobs:
-  chrome-headless:
-    runs-on: ubuntu-18.04
+  cypress-run:
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v3.4.1
       - name: Headless Chrome
-        uses: cypress-io/github-action@v2.2.7
-        timeout-minutes: 10
+        uses: cypress-io/github-action@v2.9.7
         with:
-          build: npm run build
           start: npm start
           browser: chrome
           headless: true
