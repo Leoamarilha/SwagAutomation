@@ -14,4 +14,3 @@ jobs:
           start: npm start
           browser: chrome
           headless: true
-          record: true
