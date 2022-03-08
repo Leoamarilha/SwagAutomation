@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "cypress": "^3.4.1"
+    "cypress": "^9.5.1"
   },
   "name": "swagautomation",
   "description": "![GitHub repo size](https://img.shields.io/github/repo-size/Leoamarilha/README-template?style=for-the-badge) ![GitHub language count](https://img.shields.io/github/languages/count/Leoamarilha/README-template?style=for-the-badge) ![GitHub forks](https://img.shields.io/github/forks/Leoamarilha/README-template?style=for-the-badge) ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/Leoamarilha/README-template?style=for-the-badge) ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/Leoamarilha/README-template?style=for-the-badge)",
