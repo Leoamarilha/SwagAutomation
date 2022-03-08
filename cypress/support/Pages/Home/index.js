@@ -49,4 +49,9 @@ class Home {
             .click();
     }
 
+    acessarLogin() {
+        cy.get(elem.div_login)
+            .click();
+    }
+
 } export default new Home();

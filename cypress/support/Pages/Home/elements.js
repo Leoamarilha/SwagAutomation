@@ -7,5 +7,6 @@ export const ELEMENTS = {
     btn_backPackAddCard : '[data-test="add-to-cart-sauce-labs-backpack"]',
     li_twitter : '.social_twitter > a',
     li_facebook : '.social_facebook > a',
-    li_linkedin : '.social_linkedin > a'
+    li_linkedin : '.social_linkedin > a',
+    div_login : '.login',
 }
