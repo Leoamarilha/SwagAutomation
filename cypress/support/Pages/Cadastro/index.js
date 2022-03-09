@@ -23,6 +23,19 @@ class Cadastro {
         
         cy.get(elem.inp_password)
             .type(faker.internet.password());
+
+        cy.get(elem.div_day)
+            .click();
+        cy.get(elem.div_daySelecionado)
+            .click();
+        cy.get(elem.div_month)
+            .click();
+        cy.get(elem.div_monthSelecionado)
+            .click();
+        cy.get(elem.div_year)
+            .click();
+        cy.get(elem.div_yearSelecionado)
+            .click();
     }
 
 } export default new Cadastro();
